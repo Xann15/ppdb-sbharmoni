@@ -1,0 +1,105 @@
+:root {
+    --base-color: #CE1617;
+    --hover-base-color: #a41e1e;
+    --white: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px!important;
+    height: 7px!important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--base-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-base-color);
+}
+
+* {
+    font-family: Nunito;
+}
+
+.base-color { color: var(--base-color); }
+
+.garis {
+    border: 1.5px solid var(--base-color);
+    width: 60px;
+    height: 0px;
+    transition: .3s ease all;
+}
+
+
+/* PPDB */
+
+.ppdb-home-img {
+    width: 195px;
+}
+
+.ppdb-sub-title {
+    font-weight: 500;
+}
+
+.cta-ppdb {
+    background-color: var(--base-color);
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: var(--white);
+    transition: .5s ease all;
+}
+
+.cta-ppdb:hover {
+    animation: shake-button 1s infinite ease-in-out;
+}
+
+.cta-ppdb:active {
+    background-color: var(--white);
+    border: 1px solid var(--base-color);
+    color: var(--base-color);
+}
+
+.row-sub-title:hover .garis {
+    width: 80px;
+}
+/* End PPDB */
+
+
+/* Login Page */
+.img-login-side img {
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+    height: 100vh;
+    filter: brightness(85%);
+}
+
+.img-login-header img {
+    width: 300px;
+}
+
+@keyframes shake-button {
+    0% {
+        transform: rotate(1deg);
+    }
+    25% {
+        transform: rotate(1.5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-1.5deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
